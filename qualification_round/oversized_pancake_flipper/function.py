@@ -1,4 +1,4 @@
-# oversized_pancake_flipper.py
+# function.py
 
 """
 Sample input:

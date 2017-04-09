@@ -8,7 +8,9 @@ pushing their output to it
 
 import sys
 
-from oversized_pancake_flipper import *
+from oversized_pancake_flipper.function import *
+from tidy_numbers.function import *
+from bathroom_stalls.function import *
 
 def main():
     """ Take input from standard in, and push results to standard out """
@@ -22,7 +24,7 @@ def main():
 
         # Read & parse in a single example, pass to method
         args = input().split(" ")
-        c, d = method(args)
+        c, d = method(*args)
 
         # Push results to standard out
         print("Case #{}: {} {}".format(i, c, d))
